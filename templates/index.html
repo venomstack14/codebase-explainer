@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Codebase Explainer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+
+  <style>
+    body {
+      font-family: Inter;
+      background: #020617;
+      color: white;
+      padding: 30px;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    .box {
+      margin-top: 20px;
+      padding: 15px;
+      background: #0f172a;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🧠 Codebase Explainer</h1>
+
+<input id="path" placeholder="Enter folder path"/>
+<button onclick="analyze()">Analyze</button>
+
+<div class="box">
+  <h3>Overview</h3>
+  <pre id="overview"></pre>
+</div>
+
+<div class="box">
+  <h3>Files</h3>
+  <div id="files"></div>
+</div>
+
+<div class="box">
+  <h3>Graph</h3>
+  <pre id="graph"></pre>
+</div>
+
+<div class="box">
+  <h3>Ask Question</h3>
+  <input id="question"/>
+  <button onclick="ask()">Ask</button>
+  <pre id="answer"></pre>
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
